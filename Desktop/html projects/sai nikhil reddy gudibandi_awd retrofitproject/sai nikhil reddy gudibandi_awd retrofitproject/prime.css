@@ -1,0 +1,280 @@
+body {
+    background-image: url(image9.jpg);
+    background-repeat: no-repeat;
+    color: #003300;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#wrapper {
+    width: 80%;
+    min-width: 700px;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFFFCC;
+    padding: 0 30px; 20px 30px;
+    border: 1px ridge #00332B;
+    border-radius: 15px;
+    box-shadow: inset -3px -3px 3px 3px #00332B;
+    opacity: 0.85;
+}
+
+/* table*/
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;
+}
+
+/* forms*/
+form {
+    padding: 15px;
+}
+form label {
+    display: block;
+    padding: 5px 0px 5px 5px;
+    font-weight:500;
+}
+
+
+header {
+    color: #48751A;
+    background-image: url(primelogo.gif);
+    background-repeat: no-repeat;
+    height: 100px;
+}
+h1 {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+h2 {
+    color: #003366;
+}
+
+h3 {
+    color: #006600;
+    padding-top: 10px;
+}
+
+
+
+main {
+    margin-left: 180px;
+    padding: 0 20px 20px 0;
+}
+
+main ul {
+    list-style-position: inside;
+}
+
+dd {
+    font-style: italic;
+    font-size: 0.90em;
+    line-height: 200%;
+}
+
+.contact {
+    font-weight: bold;
+    font-size: 0.90em;
+    font-family: "Times New Roman", serif;
+}
+
+.floatleft {
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.clear {
+    clear: left;
+}
+
+img {
+    border-style: none;
+}
+
+footer {
+    font-size: 0.60em;
+    font-style: italic;
+    clear: both;
+    text-align: center;
+    margin-bottom: 5px;}
+
+header,
+nav,
+main,
+footer {
+    display: block;
+}
+
+
+nav {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navigation ul {
+      list-style: none;
+      background-color: #5A8640;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+   .navigation li {
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.2em;
+      line-height: 40px;
+      height: 40px;
+      border-bottom: 1px solid #888;
+       display: inline-block;
+       padding: 5px;
+       width: 20%;
+    }
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  transition: 0.3s;
+}
+.navigation a:hover {
+  background-color: #174573;
+}
+ 
+.navigation ul li  a.active {
+  background-color:#174573;
+  color: #2E5881;
+  cursor: default;
+}
+
+.listimage {
+    display: none;
+}
+
+.brdisp {
+    display: none;
+}
+#mobile {
+    display: none;
+}
+
+
+/*Tablet settings*/
+@media only screen  and (max-width: 1024px) {
+    p, .contact , li,th,td {
+        font-size: 1.5em;
+    }
+    
+    .cleartab {
+        clear: left;
+    }
+    
+    .imagecenter {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 100px;
+    }
+    
+    table {
+        width: 75%;
+        padding: 5px;
+        margin-top: 5px;
+    }
+    
+    .listimage {
+        display: contents;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    h1 {
+        font-size: 3.5em;
+    }
+    
+    #wrapper {
+        width: 75%;
+    }
+    label , input {
+        font-size: 1.2em;
+        padding: 3px;
+    }
+}
+	
+/* Mobile Settings */
+@media only screen and (max-width: 768px) {
+    html, body #wrapper{
+        width: 100%;
+min-height: 100%;
+    }
+    
+    body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        
+    }
+
+  
+    p {
+        font-size: 1.5em;
+    }
+    
+    h1 {
+		font-size: 2.4em;
+		padding-top: 0.25em;
+		padding-left: 1.5em;
+	}
+	nav {
+		width: 100%;
+	}
+	nav a {
+		padding: 0.5em;
+		width: 40%;
+		float: left;
+		min-width: 5em;
+		margin-left: 0.5em;
+	}
+	main {
+		padding: 0.6em;
+	}
+	.floatLeft {
+		float: none;
+		padding-right: 0;
+		padding-bottom: 0;
+	}
+	h3 {
+		padding-top: 0;
+		margin: 0;
+	}
+	dd {
+		line-height: 100%;
+        font-size: 1.3em;
+	}
+	footer {
+		padding: 0.5em;
+		margin: 0;
+	}
+	#mobile {
+		display: inline;
+	}
+	#desktop {
+		display: none;
+	}
+    dt {
+        font-size: 1.3em;
+    }
+}
+
+	
